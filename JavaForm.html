@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaForm</title>
+</head>
+<style>
+	@font-face {
+	font-family:Times New Roman;
+			src:url("times.ttf");}
+	
+	button{
+		width: 160px;
+		height: 70px;
+		margin: 40px auto;
+		display: block;
+		font: 20px/1.4em "Times New Roman";
+		background: rgba(139,225,140,1.00)
+	}
+	body{
+		background: whitesmoke;
+	}	
+	#page{
+		background: white;
+		border:20px solid rgba(22,111,179,1.00);
+		padding: 40px;
+		width: 918px;
+		height: 1188px;
+		margin: 0px auto;
+	}
+	h1{
+		text-align: center;
+		font: 52px/1.4em "Times New Roman";
+		font-weight: 600;
+	}
+	p{
+		font: 20px/1.4em "Times New Roman";
+		margin-left: 30px;
+	}
+	input[type="text"]{
+		font: 16px/1.4em "Times New Roman";
+		border: 2px solid black;
+	}
+	@media print{
+		button{
+			display: none;
+			visibility: hidden;
+		}
+	}
+</style>
+<script language="javascript"
+	type="text/javascript">
+	function printPage(){
+		window.print;
+	}
+	</script>
+<body>
+	<div id="page">
+		<h1>Rental Agreement</h1>
+		<h2>Parties</h2>
+		<p>This rental agreement (hereinafter referred to as the <b>"Agreement"</b>) is entered on <input type="text"> (the <b>"Effective Date"</b>) by and between <input type="text"> with an address of <input type="text"> (hereinafter referred to as the <b>"Renter"</b>) and (hereinafter referred to as the with an address of <b>"Landlord"</b>) (collectively referred to as the <b>"Parties"</b>).</p>
+		<h2>Considerations</h2>
+		<p>The Renter hereby agrees to pay the Landlord the amount of money mentioned in this Agreement to lease the property owned by the Landlord.</p>
+		<h2>Terms</h2>
+		<p>(Option 1) This Agreement shall be effective on the date of signing this Agreement (hereinafter referred to as the "Effective Date") and will end on <input type="text"><br>
+		(Option 2) Upon the end of the term of the Agreement, this Agreement will not be automatically renewed for a new term.</p>
+		<h2>Premises, Use and Occupancy</h2>
+		<p>
+			The premises that are to be rented by the Landlord are located at (address) <input type="text"><br>
+			The premises are to be used only for residential purposes and may be occupied only by the registered occupants.
+		</p>
+		<h2>Costs and Payment</h2>
+		<p>
+			The monthly rent to be paid by the Renter to the Landlord is <input type="text">. It is to be paid by the Renter before the first day of every month, such that the first rent payment is due оп <input type="text">
+		</p>
+		<p>
+			The method of payment preferred by both parties is <input type="text">
+		</p>
+		<p>
+			In the event of late payments made by the Renter, the Landlord is entitled to impose a <input type="text"> fine as late fee.
+		</p>
+		<p>
+			Prior to taking occupancy of the premises, the Renter will pay the Landlord an amount of <input type="text"> as a security deposit to cover the cost of any damages suffered by the premises and cleaning. Such security deposit will be returned to the Renter upon the end of this Agreement, provided the premises are left in the same condition as prior to the occupancy.
+		</p>
+		<button onClick="window.print()">Print Page</button>
+	</div>
+</body>
+</html>
