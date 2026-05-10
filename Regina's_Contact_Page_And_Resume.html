@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Regina's_Contact_Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Luxurious+Roman&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } body {
+		background-image: url("https://images5.alphacoders.com/137/thumb-1920-1371563.png");
+        background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	} #page {
+        width: 75%;
+        margin: auto auto auto auto;
+    } h1 {
+		font: 48pt/1.4em "Parisienne";
+        font-weight: bold;
+		text-align: center;
+		margin-left: 24px 0;
+        margin-top: 3%;
+		background: hsla(358,65%,81%,1.00);
+        position: relative;
+    } ul {
+		width: 100%;
+		background: #f7c799;
+		display: grid;
+		grid-template: auto / repeat(6,auto);
+		margin-top: -4px;
+	} li {
+		height: 50px;
+		list-style: none;
+		text-align: center;
+		font: 14pt/2.4em "Luxurious Roman";
+		font-weight: 600;
+	} a {
+		text-decoration: none;
+		color: black;
+	} a li:hover {
+		background: hsla(31,85%,90%,1.00)
+	} form {
+        background: hsla(31,85%,90%,1.00);
+        width: 600px;
+        min-height: 600px;
+        padding: 24px;
+        margin: 36px auto;
+        border-radius: 18px;
+        font: 14pt/1.2em "Luxurious Roman";
+        font-weight: 600;
+        text-align: left;
+    } fieldset {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    } #personal input, #submit {
+        width: 100px;
+        height: 24px;
+        margin-bottom: 20px;
+    } input[type="text"] {
+        width: 98%;
+        font: 14pt/1.4em "Luxurious Roman";
+        font-weight: 600;
+        margin-top: 6px;
+        margin-bottom: 12px;
+    } input[type="radio"] {
+        font: 14pt/1.4em "Luxurious Roman";
+        font-weight: 600;
+        margin-left: 6px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    } input[type="submit"] {
+        width: 100px;
+        height: 40px;
+        background: #f7c799;
+        margin: 16px auto;
+        display: block;
+        border-radius: 12px;
+        font: 14pt/1.4em "Luxurious Roman";
+        font-weight: 600;
+        border: 1px solid #f7c799;
+	} @media only screen and (max-width: 750px) {
+         p {
+            width: 90%;
+            margin: 36px auto;
+        }
+    }
+</style>
+</head>
+
+<body>
+	<h1>Contact/Resume</h1>
+	<ul>
+		<a href="Regina's_Capstone_Portfolio.html"><li>Portfolio</li></a>
+		<a href="Regina's_About_Me.html"><li>About Me</li></a>
+		<a href="Regina's_Process.html"><li>My Process</li></a>
+		<a href="Regina's_Capstone_PortfolioTable.html"><li>Portfolio Data</li></a>
+		<a href="Regina's_Prices.html"><li>Pricing</li></a>
+		<li>Contact/Resume</li>
+	</ul>
+	<form action="https://formsubmit.co/svejda@unlv.nevada.edu" method="post">
+        <label>Name</label> <br/>
+    <input type="text" /><br/>
+         <label>Email</label> <br/>
+    <input type="text" /><br/>
+    <fieldset>
+    <p>I would like to:</p>
+    <input type="radio" name="service">
+        <label>Order a Commission</label><br/>
+    <input type="radio" name="service">
+        <label>Schedule a Design Consultation</label><br/>
+    <input type="radio" name="service">
+        <label>Ask a Question</label><br/>
+    <input type="radio" name="service">
+        <label>Other</label><br/>
+    </fieldset>
+        <label>Comments</label>
+    <textarea rows="5" cols="79"></textarea>
+    <input type="submit"/>
+	<a href="Regina S. Resume.pdf"><h1>Resume</h1></a>
+    </form>
+</body>
+</html>
